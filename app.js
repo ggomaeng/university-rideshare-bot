@@ -26,9 +26,11 @@ var controller = Botkit.facebookbot({
 var bot = controller.spawn({
 });
 
+var port = process.env.port || 3000;
+
 // if you are already using Express, you can use your own server instance...
 // see "Use BotKit with an Express web server"
-controller.setupWebserver(process.env.port,function(err,webserver) {
+controller.setupWebserver(port, function(err,webserver) {
     controller.createWebhookEndpoints(controller.webserver, bot, function() {
         console.log('This bot is online!!!');
     });
