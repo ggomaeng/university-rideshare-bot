@@ -1,0 +1,16 @@
+{
+  "name": "university-rideshare-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sung Woo Park",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.4.10",
+    "dotenv": "^4.0.0"
+  }
+}
